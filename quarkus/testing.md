@@ -23,6 +23,8 @@ Add the extension ``io.quarkiverse.cucumber:quarkus-cucumber`` to the ``pom.xml`
 - [Testing the native executable Guide](https://quarkus.io/guides/building-native-image#testing-the-native-executable)
 - [Dev Services Overview](https://quarkus.io/guides/dev-services)
 - [Quarkus Cucumber](https://docs.quarkiverse.io/quarkus-cucumber/dev/index.html)
-- Github [quarkus-cucumber](https://github.com/quarkiverse/quarkus-cucumber)
+- Github [quarkus-cucumber](https://github.com/quarkiverse/quarkus-cucumber
+- [Quarkus Mockserver](https://docs.quarkiverse.io/quarkus-mockserver/dev/index.html)
+- Github [quarkus-mockserver](https://github.com/quarkiverse/quarkus-mockserver)
 
 
