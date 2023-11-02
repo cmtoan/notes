@@ -200,3 +200,9 @@ curl -X GET http://urltoapi.amazonaws.com/dev/test -H "x-api-key=api-key-value-h
 ````
 
 
+
+=============
+
+https://howtodoinjava.com/spring-security/spring-boot-role-based-authentication-with-aws-cognito/
+
+
