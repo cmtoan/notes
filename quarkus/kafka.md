@@ -56,3 +56,11 @@ https://github.com/strimzi/test-container
 
 https://java.testcontainers.org/modules/kafka/
 
+
+## Bitnami
+
+https://github.com/bitnami/containers/tree/main/bitnami/kafka
+
+https://docs.bitnami.com/aws/infrastructure/kafka/administration/run-producer-consumer/
+
+

@@ -102,3 +102,19 @@ $ docker container rm -f 6df4
 $ docker container rm -f $(docker container ls -aq)
 ````
 
+To go into a docker
+````
+$ docker container ls
+
+$ docker exec -i -t docker-kafka-1 bash
+````
+
+### Command for the life cycle of a container
+
+- run : create a container
+- ls : list the containers
+- inspect : see details of a container
+- logs : visualisation of logs
+- exec : launch a process in a existing container
+- stop : stop a container
+- rm : suppression of container
