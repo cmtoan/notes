@@ -118,3 +118,21 @@ $ docker exec -i -t docker-kafka-1 bash
 - exec : launch a process in a existing container
 - stop : stop a container
 - rm : suppression of container
+
+See in real time logs of a container 
+````
+$ docker container logs -f ping
+````
+
+execute a command in a running container 
+````
+$ docker container exec -ti debug sh
+````
+
+### Useful options
+
+````
+--name : give a name to a container 
+--rm : delete the container when it is stopped 
+--restart=on-failure : restart automatic 
+````

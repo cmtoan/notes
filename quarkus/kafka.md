@@ -12,6 +12,8 @@ https://smallrye.io/smallrye-reactive-messaging/smallrye-reactive-messaging/3.9/
 
 https://medium.com/@TimvanBaarsen/apache-kafka-cli-commands-cheat-sheet-a6f06eac01b
 
+https://developer.confluent.io/learn/kraft/
+
 
 ### Quarkus
 
