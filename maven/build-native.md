@@ -109,9 +109,9 @@ $ mvn package -Pnative -DskipTests=true -Dquarkus.native.additional-build-args="
 
 ### reference
 
-https://quarkus.io/guides/building-native-image [https://quarkus.io/guides/building-native-image]
+https://quarkus.io/guides/building-native-image 
 
-https://quarkus.io/guides/writing-native-applications-tips [https://quarkus.io/guides/writing-native-applications-tips]
+https://quarkus.io/guides/writing-native-applications-tips 
 
-https://stackoverflow.com/questions/63328298/how-do-you-debug-a-no-instances-of-are-allowed-in-the-image-heap-when-buil [https://stackoverflow.com/questions/63328298/how-do-you-debug-a-no-instances-of-are-allowed-in-the-image-heap-when-buil]
+https://stackoverflow.com/questions/63328298/how-do-you-debug-a-no-instances-of-are-allowed-in-the-image-heap-when-buil 
 
