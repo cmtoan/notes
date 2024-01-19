@@ -13,7 +13,7 @@
         <skipITs>false</skipITs>
         <quarkus.package.type>native</quarkus.package.type>
         <quarkus.native.additional-build-args>
-          --initialize-at-run-time=org.apache.http.impl.auth.NTLMEngineImpl
+          --initialize-at-run-time=org.apache.http.impl.auth.NTLMEngineImpl\,com.amazonaws.retry.PredefinedBackoffStrategies$FullJitterBackoffStrategy\,com.amazonaws.auth.BaseCredentialsFetcher\,com.amazonaws.retry.PredefinedBackoffStrategies$EqualJitterBackoffStrategy\,java.util.concurrent.Executors$AutoShutdownDelegatedExecutorService\,com.amazonaws.event.SDKProgressPublisher$LazyHolder\,com.amazonaws.retry.PredefinedBackoffStrategies\,com.amazonaws.retry.PredefinedBackoffStrategies$SDKDefaultBackoffStrategy\,com.amazonaws.retry.PredefinedRetryPolicies\,com.amazonaws.retry.RetryPolicy\,com.amazonaws.ClientConfiguration\,com.amazonaws.auth.InstanceProfileCredentialsProvider\,com.amazonaws.auth.EC2ContainerCredentialsProviderWrapper\,com.amazonaws.auth.AWSCredentialsProviderChain
         </quarkus.native.additional-build-args>
       </properties>
     </profile>
@@ -65,6 +65,19 @@
         </exclusion>
       </exclusions>
     </dependency>
+```
+
+### register for reflection
+``` java
+@RegisterForReflection(
+  targets = {
+    IAMLoginModule.class,
+    IAMClientCallbackHandler.class,
+    IAMSaslClient.ClassLoaderAwareIAMSaslClientFactory.class,
+    IAMSaslClient.IAMSaslClientFactory.class,
+    AuthenticationResponse.class,
+  }
+)
 ```
 
 ### config quarkus
