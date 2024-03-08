@@ -10,6 +10,8 @@ https://redpanda.com/blog/web-user-interface-tools-kafka
 
 https://smallrye.io/smallrye-reactive-messaging/smallrye-reactive-messaging/3.9/kafka/kafka.html
 
+https://smallrye.io/smallrye-reactive-messaging/smallrye-reactive-messaging/3.13/kafka/kafka.html
+
 https://medium.com/@TimvanBaarsen/apache-kafka-cli-commands-cheat-sheet-a6f06eac01b
 
 https://developer.confluent.io/learn/kraft/
@@ -27,7 +29,7 @@ https://quarkus.io/guides/kafka-streams
 
 https://quarkus.io/guides/apicurio-registry-dev-services
 
-
+https://quarkus.io/blog/kafka-failure-strategy/
 
 
 ## Utils
