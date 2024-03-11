@@ -31,6 +31,18 @@ https://quarkus.io/guides/apicurio-registry-dev-services
 
 https://quarkus.io/blog/kafka-failure-strategy/
 
+https://quarkus.io/blog/kafka-commit-strategies/
+
+https://quarkus.io/blog/reactive-messaging-emitter/
+
+https://quarkus.io/blog/kafka-rest-client/
+
+https://quarkus.io/blog/kafka-cloud-events/
+
+https://quarkus.io/guides/messaging-virtual-threads
+
+https://quarkus.io/blog/virtual-threads-4/
+
 
 ## Utils
 
