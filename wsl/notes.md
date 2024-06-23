@@ -1,5 +1,11 @@
 # WSL
 
+## install wsl in windows
+
+````
+$ wsl --install
+````
+
 ### Some commands
 
 ````
