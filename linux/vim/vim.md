@@ -5,7 +5,7 @@
 | Lệnh           | Giải thích                                                    |
 |----------------|---------------------------------------------------------------|
 | `vim test.txt` | Tạo tập tin                                                   |
-| `i`            | Nhấn i để vào chế độ insert                                   |
+| `i` hoặc `a`   | Nhấn i hoặc a để vào chế độ insert                            |
 | `ESC`          | Nhấn ESC để thoát chế độ insert, trở về chế độ normal         |
 | `:q!`          | Thoát cửa sổ hiện thời, không lưu lại, nhưng không xóa buffer |
 | `:bd!`         | Xóa buffer hiện thời                                          |
@@ -24,18 +24,19 @@
 
 #### Delete (Cut)
 
-| Lệnh               | Giải thích                                                                                |
-|--------------------|-------------------------------------------------------------------------------------------|
-| `dd`               | xóa dòng hiện thời, vim chép dòng này vào clipboard, giống như ta thực hiện thao tác cut. |
-| `d15d` hoặc `15dd` | Xóa 15 dòng kể từ dòng hiện thời.                                                         |
-| `d$`               | Xóa kể từ con trỏ đến cuối dòng.                                                          |
-| `dw`               | Xóa một từ từ chỗ con trỏ bao gồm khoảng trắng sau từ đó.                                 |
+| Lệnh               | Giải thích                                                                                                                        |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| `dd`               | xóa dòng hiện thời, vim chép dòng này vào clipboard, giống như ta thực hiện thao tác cut.                                         |
+| `d15d` hoặc `15dd` | Xóa 15 dòng kể từ dòng hiện thời.                                                                                                 |
+| `d$`               | Xóa kể từ con trỏ đến cuối dòng.                                                                                                  |
+| `dw`               | Xóa một từ từ chỗ con trỏ bao gồm khoảng trắng sau từ đó.                                                                         |
+| Shift+`s` tức `S`  | xóa dòng hiện thời (it should delete the current line and put you in insert mode at the correct indentation level for this line.) |
 
 #### Cut
 
-| Lệnh               | Giải thích                                                         |
-|--------------------|--------------------------------------------------------------------|
-| `cw`               | Cắt một từ từ chỗ con trỏ đến khoảng trắng. Rồi vào chế độ insert. |
+| Lệnh | Giải thích                                                         |
+|------|--------------------------------------------------------------------|
+| `cw` | Cắt một từ từ chỗ con trỏ đến khoảng trắng. Rồi vào chế độ insert. |
 
 #### Past
 
@@ -68,6 +69,7 @@
 | `%`              | Ở vị trí dấu ngoặc `({[`, `)}]` để di chuyển con trỏ qua lại đến các dấu ngoặc này                      |
 | `w`              | Di chuyển đến từ (word) hoặc thành tố tiếp theo.                                                        |
 | `W`              | Di chuyển đến từ (word) hoặc thành tố tiếp theo sau khoảng trắng.                                       |
+| `b`              | Di chuyển về trước một từ (back)                                                                        |
 
 ### 4. Chế độ visual
 
@@ -170,9 +172,11 @@ Ta có thể tăng/giảm giá trị một số trong vim bằng các lệnh sau
 | Chọn nhiều dòng, `Ctrl+x`   | giảm số ở các dòng này xuống 1 đơn vị                                               |
 | Chọn nhiều dòng, `g+Ctrl+x` | giảm số ở các dòng này xuống 1 đơn vị, và số của dòng sau nhỏ hơn số của dòng trước |
 
-## Invoking scripts/command                             
-## Creating (dynamic) snippets                             
-## Using fzf/search/explorer inside Vim                             
+## Invoking scripts/command
+
+## Creating (dynamic) snippets
+
+## Using fzf/search/explorer inside Vim
 
 ## Cấu hình cho vim
 
