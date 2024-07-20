@@ -201,6 +201,20 @@ zenuml
     D -> A : git pull
 ````
 
+````mermaid
+sequenceDiagram
+    title Git Workflow
+    participant A as Workspace
+    participant B as "Staging (index)"
+    participant C as "Local Repository"
+    participant D as "Remote Repository"
+    A ->> B : git add
+    B ->> C : git commit
+    C ->> D : git push
+    D ->> C : git fetch
+    D ->> A : git pull
+````
+
 Fetching allows us to download changes from a remote repository, 
 BUT those changes will not be automatically integrated into our working files.
 
