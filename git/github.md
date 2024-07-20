@@ -187,19 +187,31 @@ $ git checkout --track origin/branch_1
 
 ## Git Fetch
 
-````mermaid
-zenuml
-    title Git Workflow
-    A as Workspace
-    B as "Staging (index)"
-    C as "Local Repository"
-    D as "Remote Repository"
-    A -> B : git add
-    B -> C : git commit
-    C -> D : git push
-    D -> C : git fetch
-    D -> A : git pull
-````
+[//]: # (````mermaid)
+
+[//]: # (zenuml)
+
+[//]: # (    title Git Workflow)
+
+[//]: # (    A as Workspace)
+
+[//]: # (    B as "Staging &#40;index&#41;")
+
+[//]: # (    C as "Local Repository")
+
+[//]: # (    D as "Remote Repository")
+
+[//]: # (    A -> B : git add)
+
+[//]: # (    B -> C : git commit)
+
+[//]: # (    C -> D : git push)
+
+[//]: # (    D -> C : git fetch)
+
+[//]: # (    D -> A : git pull)
+
+[//]: # (````)
 
 ````mermaid
 sequenceDiagram
