@@ -22,11 +22,21 @@
 | `y^`        | sao chép từ đầu dòng đến vị trí con trỏ                |
 | `yiw`       | sao chép từ (word) hiện thời                           |
 
+#### Move
+
+| Lệnh    | Giải thích                           |
+|---------|--------------------------------------|
+| `:m 3`  | Di chuyển dòng đến hàng thứ 3.       |
+| `:m -2` | Di chuyển dòng lên phía trên 2 dòng. |
+
 #### Delete (Cut)
 
 | Lệnh               | Giải thích                                                                                                                        |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| Shift+`d`          | xóa nội dung dòng hiện thời.                                                                                                      |
 | `dd`               | xóa dòng hiện thời, vim chép dòng này vào clipboard, giống như ta thực hiện thao tác cut.                                         |
+| `dk`               | xóa dòng hiện thời, và dòng trên nó.                                                                                              |
+| `dj`               | xóa dòng hiện thời, và dòng dưới nó.                                                                                              |
 | `d15d` hoặc `15dd` | Xóa 15 dòng kể từ dòng hiện thời.                                                                                                 |
 | `d$`               | Xóa kể từ con trỏ đến cuối dòng.                                                                                                  |
 | `dw`               | Xóa một từ từ chỗ con trỏ bao gồm khoảng trắng sau từ đó.                                                                         |
@@ -81,6 +91,33 @@ Chuyển sang chế độ Visual để thấy các phần được làm nổi b�
 | `v`                    | nhấn `v` in thường sẽ chuyển sang chế độ visual cho kí tự (character visual mode)                                                       |
 | `Ctrl+v` hoặc `Ctrl+q` | để chuyển sang chế độ visual block mode (vertical virtual mode). Trong Windows thì Ctrl+v dành cho past nên ta chỉ có thể dùng `Ctrl+q` |
 
+#### Thực thi lệnh shell trong chế độ visual
+Trong Vim, gõ
+````
+echo Hello
+echo $((1+2))
+````
+
+Tại dòng này, nhấn `ESC`, Nhấn `Shift+v` để chuyển sang chế độ visual
+
+Sau đó gõ lệnh `:!sh` rồi nhấn Enter để gọi lệnh shell cho câu lệnh echo này.
+
+#### Thực thi lệnh của linux trong chế độ visual
+Trong Vim, gõ
+````
+Hello
+World
+Hello
+````
+
+Tại dòng này, nhấn `ESC`, Nhấn `ggVG` để chọn toàn bộ các dòng và chuyển sang chế độ visual
+
+Sau đó gõ lệnh `:!sort` rồi nhấn Enter để sắp thứ tự các dòng này.
+
+Hoặc Sau đó gõ lệnh `:!sort | uniq` rồi nhấn Enter để sắp thứ tự các dòng này và chỉ giữ lại các giá trị duy nhất (không giống nhau).
+
+Hoặc Sau đó gõ lệnh `:!sort | uniq -c` sắp xếp như trên và thêm đếm số các giá trị giống nhau ở trước mỗi dòng.
+
 ### 5. Chọn text (Select)
 
 | Lệnh          | Giải thích                                                                                                                                                                                                              |
@@ -104,6 +141,13 @@ Chuyển sang chế độ Visual để thấy các phần được làm nổi b�
 |-------------|-------------------------------------------------------------------------------|
 | `:norm IHi` | Ở đây I sẽ thêm từ "Hi" vào bên trái của mỗi dòng.                            |
 | `:norm A;`  | Dùng A ở đây để thêm vào cuối dòng. Ở đây ";" sẽ được thêm vào cuối mỗi dòng. |
+
+#### Thêm/bớt tab trước các dòng
+
+* Chọn toàn bộ các dòng của một tập tin với lệnh `ggVG`
+* Shift+`>` để thêm tab vào các dòng
+* Shift+`<` để bớt tab khỏi đầu các dòng
+* Shift+`.` để lặp lại thao tác vừa thực hiện
 
 #### Ctrl+v hoặc Ctrl+q visual block mode (vertical virtual mode)
 

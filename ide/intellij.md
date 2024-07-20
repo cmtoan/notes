@@ -30,15 +30,33 @@
 |----------|--------------|
 | Ctrl+y   | xóa một dòng |
 
+#### Live templates
+
+Xem thêm Live templates
+
+| Phím tắt       | Hiệu ứng                                                                             |
+|----------------|--------------------------------------------------------------------------------------|
+| main hoặc psvm | để có "public static void main(String[] args)"                                       |
+| sout           | để in giá trị với System.out.println(value)                                          |
+| soutv          | để in giá trị với System.out.println("value = " + value)                             |
+| soutm          | để in lớp hiện thời với System.out.println("CurrentClasss")                          |
+| soutp          | để in hàm hiện thời với đối số System.out.println("args = " + Arrays.toString(args)) |
+| iter hoặc I    | để in vòng lặp "for (String string : list) {}"                                       |
+| itm            | để in vòng lặp "for (Map.Entry<String, Integer> entry : map.entrySet()) {}"          |
+
 #### Postfix completion
+
+Sau một giá trị, gõ các phím sau :
 
 | Phím tắt | Hiệu ứng                                                 |
 |----------|----------------------------------------------------------|
 | .not     | thêm phủ định "!" vào đầu giá trị                        | 
+| .if      | để in giá trị thành "if (value) {}"                      | 
 | .nn      | để in giá trị thành "if (value != null) {}"              |
 | .null    | để in giá trị thành "if (value == null) {}"              |
 | .sout    | để in giá trị với System.out.println(value)              |
 | .soutv   | để in giá trị với System.out.println("value = " + value) |
+| .iter    | để in vòng lặp "for (String string : list) {}"           | 
 
 ### Selection
 
