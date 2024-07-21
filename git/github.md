@@ -22,7 +22,7 @@ Ex:
 $ git remote add origin https://github.com/example/repo.git
 ````
 
-Origin is a conventional Git remote name, but it is not at all special. It's just a name for a URL
+Origin is a conventional Git remote name, but it is not at all special. It's just a name for a URL.
 When we clone a Github repo, the default remote name setup for us is called origin. 
 You can change it. Most people leave it.
 
@@ -122,7 +122,7 @@ I can't move this myself. It's like a bookmark pointing to the last known commit
 
 "At the time you last communicated with this remote repository, here is where x branch was pointing"
 
-They follow this pattern <remote>/<branch>
+They follow this pattern `<remote>/<branch>`
 * origin/master references the state of the master branch on the remote repo named origin.
 * upstream/myBranch references the state of the myBranch branch on the remote named upstream (a common remote name)
 
