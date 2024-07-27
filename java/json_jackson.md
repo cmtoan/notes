@@ -19,6 +19,7 @@ Viết Java Object thành Json
         Message message = new Message("Hello World");
         objectMapper.writeValue(new File("./message.json"), message);
         System.out.println(objectMapper.writeValueAsString(message));
+        System.out.println(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(message));
     }
 ````
 
