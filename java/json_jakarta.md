@@ -118,3 +118,7 @@ void readMessage() throws FileNotFoundException {
     }
 ````
 
+## Doc
+
+https://jakarta.ee/learn/docs/jakartaee-tutorial/current/web/jsonp/jsonp.html
+
