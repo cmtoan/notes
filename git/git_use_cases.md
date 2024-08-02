@@ -85,3 +85,24 @@ $ git revert <commit-hash>
 $ git commit -a -m "bad commit"
 ````
 
+## Show current branch name
+
+````
+$ git rev-parse --abbrev-ref HEAD
+$ git branch --show-current
+````
+
+## Reset a local branch to the point where the remote is
+
+````
+$ git fetch origin
+$ git reset --hard origin/<branchname>
+````
+git fetch origin downloads the latest from remote without trying to merge or rebase anything.
+
+Ex:
+````
+$ git branch --show-current
+$ git fetch origin
+$ git reset --hard origin/fix/test
+````
