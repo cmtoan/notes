@@ -11,7 +11,7 @@
 
 Ví dụ :
 
-Kiểm tra xem một chuỗi chỉ gồm các số
+Kiểm tra xem một chuỗi chỉ không gồm các số
 
 ````
 select * from table_test where column_test !~* '^[0-9]\d*$';
