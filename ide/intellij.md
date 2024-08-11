@@ -21,8 +21,8 @@
 | Phím tắt       | Hiệu ứng                                            |
 |----------------|-----------------------------------------------------|
 | Ctrl+Alt+v     | nhằm tạo một biến (variable) từ một giá trị (value) |
-| (Fn+)Shift+F6  | rename                                              |
-| (Fn+)Shift+F10 | run                                                 |
+| Shift+(Fn+)F6  | rename                                              |
+| Shift+(Fn+)F10 | run                                                 |
 
 #### Edit
 
@@ -72,10 +72,16 @@ Sau một giá trị, gõ các phím sau :
 | Alt+Shift+ "+" (/) | zoom in  |
 | Alt+Shift+ "0" (.) | zoom out |
 
-### Add shortcut
+### Keymap
+
+#### Add shortcut
 
 Ctrl+Alt+S
 > Keymap > Editor actions > choose one action > right click > Add keyboard Shortcut
+
+#### Add abbreviation
+
+> Keymap > Editor actions > choose one action > right click > Add Abbreviation
 
 ### Lookup
 
@@ -88,13 +94,93 @@ Ctrl+Alt+S
 | Ctrl+q       | xem Java doc                                                                   |
 | Ctrl+Shift+i | hiển thị nhanh code của hàm, biến ... hiện thời ngay con trỏ                   |
 
-#### Navigation
+### Navigation
 
-| Phím tắt                        | Hiệu ứng                                             |
-|---------------------------------|------------------------------------------------------|
-| Ctrl+b                          | đi vào code của hàm, biến ... hiện thời ngay con trỏ |
-| Right click > Local history     | hiển thị local history                               |
-| Shift+Shift > Jshell console... | hiển thị jshell console                              |
+Di chuyển con nháy (caret):
+
+| Phím tắt             | Hiệu ứng                                              |
+|----------------------|-------------------------------------------------------|
+| Ctrl+<-              | move Caret to the next word                           |
+| Ctrl+->              | move Caret to the previous word                       |
+| Ctrl+<               | move Caret forward a paragraph                        |
+| Ctrl+*               | move Caret backward a paragraph                       |
+| Ctrl+Shift+<         | move Caret forward a paragraph with selection         |
+| Ctrl+Shift+*         | move Caret backward a paragraph with selection        |
+| Ctrl+Alt+<-          | Navigate Backward                                     |
+| Ctrl+Alt+->          | Navigate Forward                                      |
+| Ctrl+Shift+Backspace | Navigate the last edited location                     |
+| Ctrl+M               | Find current caret location                           |
+| Ctrl+Shift+M         | To move caret between matching code block braces ({}) |
+| Ctrl+[               | move Caret to code block start                        |
+| Ctrl+Shift+[         | move Caret to code block start with selection         |
+| Ctrl+]               | move Caret to code block end                          |
+| Ctrl+Shift+]         | move Caret to code block end with selection           |
+
+Di chuyển con nháy (caret) giữa các thay :
+
+| Phím tắt         | Hiệu ứng                    |
+|------------------|-----------------------------|
+| Ctrl+Alt+Shift+↓ | Navigate -> Next Change     |
+| Ctrl+Alt+Shift+↑ | Navigate -> Previous Change |
+
+Di chuyển giữa các tập tin:
+
+| Phím tắt         | Hiệu ứng                                                                              |
+|------------------|---------------------------------------------------------------------------------------|
+| Ctrl+Shift+A     | Find actions                                                                          |
+| Ctrl+E           | Recent files                                                                          |
+| Ctrl+Shift+E     | Recent locations                                                                      |
+| Ctrl+N           | Navigate->Class                                                                       |
+| Ctrl+Shift+N     | Navigate->File                                                                        |
+| Ctrl+Shift+Alt+N | Navigate->Symbol (methode name)                                                       |
+| Ctrl+B           | Navigate->Declaration : đi vào code của hàm, biến ... hiện thời ngay con trỏ          |
+| Ctrl+Shift+B     | Navigate->Type Declaration : đi vào code của kiểu (type) hiện thời ngay con trỏ       |
+| Ctrl+Alt+B       | Navigate->Implements                                                                  |
+| Ctrl+Alt+Left    | Navigate->Back                                                                        |
+| Ctrl+Alt+Right   | Navigate->Forward                                                                     |
+| Alt+(Fn+)F1, 1   | Select opened file                                                                    |
+| Alt+(Fn+)F7      | Find usages                                                                           |
+| Right            | Select child node                                                                     |
+| Left             | undo Select child node                                                                |
+| Ctrl+Shift+T     | Navigate->Test [Subject] (nhấn tổ hợp phím này để qua lại giữa test và lớp được test) |
+| Ctrl+Right       | Di chuyển đến từ tiếp theo                                                            |
+| Ctrl+Left        | Di chuyển đến từ trước đó                                                             |
+
+Di chuyển giữa các cửa sổ:
+
+| Phím tắt | Hiệu ứng                  |
+|----------|---------------------------|
+| Alt+0    | Commit window             |
+| Alt+1    | Project window            |
+| Alt+3    | Find window               |
+| Alt+4    | Run window                |
+| Alt+5    | Debug window              |
+| Alt+6    | Problem window            |
+| Alt+8    | Service window            |
+| Alt+9    | Version control window    |
+| Esc      | Quay trở lại Editor chính |
+
+| Phím tắt                        | Hiệu ứng                                          |
+|---------------------------------|---------------------------------------------------|
+| Right click > Local history     | hiển thị local history                            |
+| Shift+Shift > Jshell console... | hiển thị jshell console                           |
+| Ctrl+Shift+(Fn+)F12             | Hide all window                                   |
+| Ctrl+Ctrl                       | Run anything                                      |
+| Ctrl+F2                         | Stop, nhấn tổ phím lần thứ hai để kết thúc tất cả |
+
+### Tìm kiếm
+
+| Phím tắt     | Hiệu ứng               |
+|--------------|------------------------|
+| (Fn+)F3      | Find next from the top |
+| Ctrl+(Fn+)F3 | Find next              |
+
+### Xem thay đổi
+
+| Phím tắt    | Hiệu ứng               |
+|-------------|------------------------|
+| Alt+Shift+C | View -> Recent changes |
+
 
 ### Một số tính năng khác
 
