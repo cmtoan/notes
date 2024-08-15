@@ -60,10 +60,11 @@ Sau một giá trị, gõ các phím sau :
 
 ### Selection
 
-| Phím tắt      | Hiệu ứng                                 |
-|---------------|------------------------------------------|
-| Ctrl+Shift+<- | chọn từ con trỏ đến đầu từ               |
-| Ctrl+w        | chọn một từ, ở cuối dòng sẽ chọn cả dòng |
+| Phím tắt         | Hiệu ứng                                 |
+|------------------|------------------------------------------|
+| Ctrl+Shift+<-    | chọn từ con trỏ đến đầu từ               |
+| Ctrl+w           | chọn một từ, ở cuối dòng sẽ chọn cả dòng |
+| Alt+Shift+Insert | vào chế độ chọn theo cột                 |
 
 ### Zoom
 
@@ -168,6 +169,26 @@ Di chuyển giữa các cửa sổ:
 | Ctrl+Ctrl                       | Run anything                                      |
 | Ctrl+F2                         | Stop, nhấn tổ phím lần thứ hai để kết thúc tất cả |
 
+### Chạy chương trình
+
+| Phím tắt            | Hiệu ứng          |
+|---------------------|-------------------|
+| Shift+(Fn+)F5       | Run File (Script) |
+| Alt+Shift+(Fn+)F10  | Run...            |
+| Ctrl+Shift+(Fn+)F10 | Run Coverage      |
+| Ctrl+Alt+Shift+I    | Run Inspection    |
+| Shift+(Fn+)F10      | (Re)run           |
+| Ctrl+(Fn+)F5        | Rerun             |
+
+### Format
+
+| Phím tắt         | Hiệu ứng          |
+|------------------|-------------------|
+| Ctrl+Alt+O       | Optimize Import   |
+| Ctrl+Alt+L       | Reformat code     |
+| Ctrl+Alt+I       | Auto-indent lines |
+| Ctrl+Alt+Shift+L | Reformat file     |
+
 ### Tìm kiếm
 
 | Phím tắt     | Hiệu ứng               |
@@ -180,7 +201,6 @@ Di chuyển giữa các cửa sổ:
 | Phím tắt    | Hiệu ứng               |
 |-------------|------------------------|
 | Alt+Shift+C | View -> Recent changes |
-
 
 ### Một số tính năng khác
 
