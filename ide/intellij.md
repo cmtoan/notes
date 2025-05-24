@@ -2,11 +2,15 @@
 
 ## Shortcut
 
-#### Tập tin
+#### Tập tin, hàm
 
-| Phím tắt        | Hiệu ứng      |
-|-----------------|---------------|
-| Ctrl+Alt+Insert | Thêm lớp Java |
+| Phím tắt        | Hiệu ứng                                                                   |
+|-----------------|----------------------------------------------------------------------------|
+| Ctrl+Alt+Insert | Thêm lớp Java                                                              |
+| Ctrl+i          | Thêm hàm còn thiếu khi kế thừa từ một lớp hoặc triển khai từ một interface |
+| Ctrl+o          | Override hàm kế thừa từ một lớp                                            |
+| Ctrl+Shift+t    | Thêm lớp test cho lớp hiện hành                                            |
+| Alt+Insert      | Generate                                                                   |
 
 ### Completion
 
@@ -21,7 +25,6 @@
 | Alt+Shift+/      | Cyclic Expand Word (backward)                                                                                                     |
 | Ctrl+/           | Comment //                                                                                                                        |
 | Ctrl+Shift+/     | Comment /**/                                                                                                                      |
-| Ctrl+i           | Thêm hàm còn thiếu khi kế thừa từ một lớp hoặc triển khai từ một interface                                                        |
 
 #### Refactoring
 
