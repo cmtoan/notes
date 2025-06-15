@@ -8,15 +8,16 @@ Ctrl+K Ctrl+S
 
 ### Edit
 
-| Phím tắt             | Hiệu ứng        |
-|----------------------|-----------------|
-| Ctrl+Shift+K         | Xóa một dòng    |
-| Shift+Alt+F          | Format document |
-| Shift+Alt+;          | Auto fix...     |
-| Shift+Alt+Down Arrow | Copy line down  |
-| Shift+Alt+Up Arrow   | Copy line up    |
-| Alt+Up Arrow         | Move line up    |
-| Alt+Down Arrow       | Move line down  |
+| Phím tắt             | Hiệu ứng         |
+|----------------------|------------------|
+| Ctrl+Shift+K         | Xóa một dòng     |
+| Shift+Alt+F          | Format document  |
+| Shift+Alt+O          | Organize imports |
+| Shift+Alt+;          | Auto fix...      |
+| Shift+Alt+Down Arrow | Copy line down   |
+| Shift+Alt+Up Arrow   | Copy line up     |
+| Alt+Up Arrow         | Move line up     |
+| Alt+Down Arrow       | Move line down   |
 
 Thêm dấu chấm phẩy cuối dòng : Settings (Ctrl+,) rồi tìm semicolon trong Javascript và
 Typescript rồi chọn insert
