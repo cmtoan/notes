@@ -28,6 +28,8 @@ $|A \times B| = |A| \ast |B|$
 
 $O(nm) \rightarrow O(m)$
 
+$20! \sim 10^{18}$
+
 https://rpruim.github.io/s341/S19/from-class/MathinRmd.html
 
 https://www.upyesp.org/posts/makrdown-vscode-math-notation/

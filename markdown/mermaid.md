@@ -13,6 +13,39 @@ flowchart LR
     A-->F(C2) --> G(Native level 4)
 ````
 
+
+
+````mermaid
+---
+Title: Vòng đời của thực thể trong JPA
+---
+flowchart 
+    A(TRANSIENT)-->|"persist(entity)"| B(MANAGED)
+    B --> |"detach(entity), clear(), close()"| E(DETACHED)
+    E --> |"merge(entity)"| B
+    B --> |"remove(entity)"| D(REMOVED)
+    D --> |"flush()"| C
+    B --> |"flush()"| C[(CSDL)]
+    C --> |"find, getReference, getResultList..."| B
+    D --> |"persist(entity)"| B
+````
+
+````mermaid
+---
+Title: Đường đi Hamilton
+---
+flowchart
+    A --- B((B))
+    A --- D((D))
+    A((A)) --- E((E))
+    E --- F((F))
+    D --- F
+    D --- E
+    B --- C((C))
+    E --- C
+    F --- C
+````
+
 ## stateDiagram-v2
 
 ````mermaid
@@ -89,22 +122,7 @@ block-beta
     end
 ````
 
-## flowchart
 
-````mermaid
----
-Title: Vòng đời của thực thể trong JPA
----
-flowchart 
-    A(TRANSIENT)-->|"persist(entity)"| B(MANAGED)
-    B --> |"detach(entity), clear(), close()"| E(DETACHED)
-    E --> |"merge(entity)"| B
-    B --> |"remove(entity)"| D(REMOVED)
-    D --> |"flush()"| C
-    B --> |"flush()"| C[(CSDL)]
-    C --> |"find, getReference, getResultList..."| B
-    D --> |"persist(entity)"| B
-````
 
 ## graph
 
