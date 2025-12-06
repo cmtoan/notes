@@ -173,7 +173,7 @@ graph LR
     s3 --> list1
     s2 --> two
 ````
-
+€
 ## sequenceDiagram
 
 ````mermaid
@@ -197,4 +197,5 @@ sequenceDiagram
   deactivate B
   deactivate C
 ````
+
 
